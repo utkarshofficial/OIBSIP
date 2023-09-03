@@ -1,0 +1,68 @@
+.taskCard{
+    background-color: #9decff;
+    color: #111c2f;
+    padding: 20px;
+    border-radius: 40px;
+}
+.taskCard .avatarOnCard{
+    display: flex;
+    justify-content: space-between;
+}
+.taskCard .taskTitle{
+    display: flex;
+    justify-content: space-between;
+}
+.taskCard .taskCardDone{
+    display: flex;
+    align-items: center;
+}
+.taskCard .taskCardDone button{
+    /* background-color: transparent; */
+    background-color: #5e8bff;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+.taskCardDone > p{
+    color: #111c2f;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+.tick{
+    width: 32px;
+    transform: scale(1.4);
+    filter: invert(1);
+}
+.taskList > ul{
+    margin: 0;
+    margin-top: 5px;
+    height: calc(100vh - 180px);
+    padding: 0; 
+    overflow: auto;
+    padding-bottom: 65px;
+}
+li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.taskTitle{
+    width: 100%;
+}
+.taskTitle > p{
+    font-weight: 600;
+    font-size: 1.5em;
+}
+.taskDescription .desTitle{
+    font-weight: 700;
+}
+.taskDescription .description{
+    font-weight: 450;
+    line-height: 1;
+}
+hr{
+    margin: 2px 0;
+    border: none;
+    border-top: 1px solid #111c2f;
+}

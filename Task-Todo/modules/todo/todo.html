@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo</title>
+    <link rel="stylesheet" href="../bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="todo.css" />
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="addTask.css">
+    <link rel="stylesheet" href="taskCard.css">
+  </head>
+  <body>
+    <div class="navbarBootstrap">
+      <nav class="navbar bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/modules/login/login.html">
+            <img
+              src="../img/todo-logo-cutout.png"
+              alt="Logo"
+              width="30"
+              height="30"
+              class="d-inline-block align-text-top"
+            />TickTask
+          </a>
+          <a href="/modules/profile/profile.html">
+            <div class="profile-nav">
+              <p id="profileName" class="text-primary"></p>
+              <div class="profile-icon">
+                <p id="profileLetter" class="text-white">U</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="wish">
+        <h1 id="wish">
+          <span></span>
+          <span></span>
+        </h1>
+      </div>
+      <div class="stickContainer">
+        <div class="dateAndRatio z-idx2">
+          <div class="date">
+            <p class="headingText">Today's <span id="dayName">Monday</span></p>
+            <p class="smallText" id="date">Dec 12, 2022</p>
+          </div>
+          <div class="taskRatio">
+            <p class="headingText text-end">
+              <span id="taskDoneRatio">75</span>% Done
+            </p>
+            <p class="smallText">Completed Tasks</p>
+          </div>
+        </div>
+        <div class="tabs z-idx2">
+          <button id="activeTabBtn" class="tabBtn">
+            <span id="activeCount">12</span>
+            Active
+          </button>
+          <button id="doneTabBtn" class="tabBtn">
+            <span id="doneCount">3</span>
+            Done
+          </button>
+        </div>
+      </div>
+      <div class="taskList">
+        <ul id="activeUl">
+          <li>
+            <div class="taskCard">
+              <div class="avatarOnCard">
+                <div id="taskAvatar" class="avatar" >
+                  U
+                </div>
+                <div class="taskCardDone">
+                  <button id="taskCardBtn">
+                    <img class="tick" src="img/tick.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="taskTitle">
+                <p id="task">Learn JavaScript</p>
+              </div>
+              <hr />
+              <div class="taskDescription">
+                <p class="desTitle">Description</p>
+                <p class="description">
+                  Start from chapter 1 to 8, make notes of all the lectures and
+                  revise previous topics
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul id="doneUl">
+          <li>
+            <div class="taskCard">
+              <div class="avatarOnCard">
+                <div id="taskAvatar" class="avatar" >
+                  U
+                </div>
+                <div class="taskCardDone">
+                  <button id="taskCardBtn">
+                    <img class="tick" src="img/tick.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="taskTitle">
+                <p id="task">Learn Mongo</p>
+              </div>
+              <hr />
+              <div class="taskDescription">
+                <p class="desTitle">Description</p>
+                <p class="description">
+                  Start from chapter 1 to 8, make notes of all the lectures and
+                  revise previous topics
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div id="addTaskForm" class="form-container">
+          <div class="form">
+            <div class="cancel">
+              <p id="cancelTask">X</p>
+            </div>
+            <div class="form-group">
+              <input autofocus placeholder="Title" type="text" id="addTitle" required>
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Description" id="addDescription" rows="5" cols="50" required></textarea>
+            </div>
+          </div>
+        </div>
+        <button class="addTaskBtn" id="addTaskBtn">
+          <img src="img/add.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <script src="../bootstrap/bootstrap.js"></script>
+    <script src="todo-style.js"></script>
+    <script src="todo.js"></script>
+    <script src="date.js"></script>
+    <script src="../navbar/navbar.js"></script>
+  </body>
+</html>

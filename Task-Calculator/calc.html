@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="histo">
+            <div class="histoTitle">
+                <span>Histroy</span>
+                <div class="flex-center">
+                    <span id="clearHistoryBtn">CLR</span>
+                    <img src="clock.svg" id="historyBtn">
+                </div>
+            </div>
+            <div id="histoBox" class="histoBox">
+                <ul class="histoList" id="historyList">
+                    No History
+                </ul>
+            </div>
+        </div>
+        <div class="output">
+            <p id="ans">0</p>
+        </div>
+        <div class="input">
+            <button id="clearBtn" class="btnBox colorOg colorBk">AC</button>
+            <button id="backspaceBtn" class="btnBox colorOg colorBk">←</i></button>
+            <button class="btnBox operation colorOg colorBk">%</button>
+            <button class="btnBox operation colorOg colorBk">/</button>
+            <button class="btnBox numVal">7</button>
+            <button class="btnBox numVal">8</button>
+            <button class="btnBox numVal">9</button>
+            <button class="btnBox operation colorOg colorBk">x</button>
+            <button class="btnBox numVal">4</button>
+            <button class="btnBox numVal">5</button>
+            <button class="btnBox numVal">6</button>
+            <button class="btnBox operation colorOg colorBk">-</button>
+            <button class="btnBox numVal">1</button>
+            <button class="btnBox numVal">2</button>
+            <button class="btnBox numVal">3</button>
+            <button class="btnBox operation colorOg colorBk">+</button>
+            <button class="btnBox numVal ">00</button>
+            <button class="btnBox numVal">0</button>
+            <button class="btnBox numVal">.</button>
+            <button id="equalBtn" class="btnBox equal-color">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

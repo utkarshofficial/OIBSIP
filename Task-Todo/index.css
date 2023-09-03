@@ -1,0 +1,92 @@
+body{
+    background-color: #303642;
+}
+
+.homeBox{
+    padding: 20px;
+}
+
+.homeBox .mainTitle{
+    color: white;
+}
+.mainTitle .webName{
+    color: #f17869;
+    text-transform: lowercase;
+    text-decoration: underline dotted;
+}
+.homeBox .todoImg{
+    position: relative;
+}
+.homeBox .todoImg > img{
+    z-index: 2;
+    position: relative;
+    top: 10px;
+    left: 15px;
+    height: 50vh;
+    width: 50vw;
+    /* border: 10px solid transparent; */
+    border-radius: 20px;
+    box-shadow: -7px 20px 20px 0px rgb(0, 0, 0);
+    transition: ease 1s;
+}
+/* .homeBox .todoImg > img:hover{
+    transform: skew(25deg, 0deg) translateX(75px);
+
+} */
+.homeBox .todoImg .imgBack{
+    box-shadow: -17px 20px 20px 0px black;
+    z-index: 1;
+    height: 54vh;
+    width: 57vw;
+    max-width: 400px;
+    background-color: #f17869;
+    border-radius: 20px;
+    transform: skew(204deg, 0deg) transl5555755ateX(60px);
+    position: absolute;
+    top: 0;
+}
+
+.textAbout{
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #9c82f7;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.textAbout img{
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    margin: auto;
+}
+
+.textAbout span{
+    color: #4b013b;
+    font-weight: 900;
+}
+.textAbout .textDec{
+    background-color: azure;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: justify;
+}
+.textAbout .loginDec{
+    font-weight: 800;
+    color: rgb(75, 0, 124);
+    text-align: center;
+}
+.textAbout .loginDec > a{
+    border: none;
+    color: rgb(201, 90, 0);
+    font-size: 16pt;
+}
+.footer{
+    margin: 0;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: black;
+
+}
+.footer > p{
+    margin: 0;;
+}

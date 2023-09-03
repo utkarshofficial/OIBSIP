@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="../loader/loader.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
+  </head>
+  <body>
+    <div></div>
+    <div class="form-box">
+      <form class="form" onsubmit="return false">
+        <span class="title">Log in</span>
+        <span class="subtitle">Login to your account.</span>
+        <div class="form-container">
+          <input autofocus required type="text" class="input" placeholder="Username or email" id="username"/>
+          <input autofocus required type="password" class="input" placeholder="Password" id="password"/>
+        </div>
+        <div class="loader" id="loader">
+          <div class="justify-content-center jimu-primary-loading"></div>
+        </div>
+        <span id="error">Error</span>
+        <input type="submit" id="loginBtn" class="button" value="Log in"></input>
+      </form>
+      <div class="form-section">
+        <p>Create an account? <a href="signup.html">Sign up</a></p>
+      </div>
+    </div>
+    <script src="login.js"></script>
+    <script src="../navbar/navbar.js"></script>
+  </body>
+</html>

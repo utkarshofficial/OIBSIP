@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Tick Task</title>
+    <link rel="stylesheet" href="../loader/loader.css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="../navbar/navbar.css" />
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+  <body>
+    <div class="navbarBootstrap">
+      <nav class="navbar bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/modules/login/login.html">
+            <img
+              src="../img/todo-logo-cutout.png"
+              alt="Logo"
+              width="30"
+              height="30"
+              class="d-inline-block align-text-top"
+            />TickTask
+          </a>
+          <a href="/modules/profile/profile.html">
+            <div class="profile-nav">
+              <p id="profileName" class="text-primary"></p>
+              <div class="profile-icon">
+                <p id="profileLetter" class="text-white">U</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </nav>
+    </div>
+    <div class="profileBox">
+      <div class="formContainer">
+        <div class="profTitle" >
+            <p id="profTitle">U</p>
+        </div>
+        <p class="title">Profile</p>
+        <form class="form" onsubmit="return false">
+          <div class="inputGroup">
+            <label for="fullname">Name</label>
+            <input type="text" id="fullname" placeholder="" />
+          </div>
+          <div class="inputGroup">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="" />
+          </div>
+          <div class="inputGroup">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="" />
+          </div>
+          <div class="inputGroup">
+            <label for="password">Password</label>
+            <input
+              type="text"
+              name="password"
+              id="password"
+              placeholder=""
+            />
+          </div>
+          <div class="loader" id="loader">
+            <div class="justify-content-center jimu-primary-loading"></div>
+          </div>
+          <button class="sign" id="saveBtn">Save</button>
+          <div class="buttonGroup">
+              <button class="sign" id="deleteTaskBtn">Delete Tasks</button>
+              <button class="sign" id="logoutBtn">Log Out</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="profile.js"></script>
+    <script src="../navbar/navbar.js"></script>
+  </body>
+</html>

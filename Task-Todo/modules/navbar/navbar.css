@@ -1,0 +1,32 @@
+.navbarBootstrap{
+    color: white!important;
+}
+.navbarBootstrap a{
+    text-decoration: none;
+}
+.profile-nav{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #111c2f;
+    padding-left: 10px;
+    border: 2px solid #111c2f;
+    border-radius: 10px;
+}
+
+.navbar-brand{
+    font-weight: 600;
+}
+
+#profileName{
+    font-size: 1.4em;
+    margin: 0;
+}
+.profile-icon{
+    background-color: #000000;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5em;
+}
